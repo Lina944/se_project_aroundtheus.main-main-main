@@ -39,7 +39,7 @@ const profileEditForm = profileEditModal.querySelector("#modal-form");
 
 const addCardFormElement = addCardModal.querySelector("#card-form");
 
-const modalPreviewImage = document.querySelector("#modal-image-preview");
+const modalPreviewImage = document.querySelector("#modal-image");
 const modalImagePreviewLink = modalPreviewImage.querySelector(
   ".modal__preview-image"
 );
@@ -53,7 +53,7 @@ const profileCloseModalButton = profileEditModal.querySelector(
   "#modal-close-button"
 );
 const profileTitleInput = document.querySelector("#profile-title-input");
-const profileSubtitleInput = document.querySelector("#profile-subtitle");
+const profileSubtitleInput = document.querySelector("#profile-description");
 const addNewCardButton = document.querySelector(".profile__add-button");
 const addCardCloseModalButton = addCardModal.querySelector(
   "#modal-close-card-button"
@@ -62,13 +62,13 @@ const buttonPreview = document.querySelector(".modal__close-preview-button");
 
 
 const profileName = document.querySelector("#profile-title");
-const profileSubtitle = document.querySelector("#profile-subtitle");
+const profileSubtitle = document.querySelector("#profile-description");
 
 
 const cardTitleInput = addCardFormElement.querySelector(
   ".modal__inputs_title"
 );
-const cardURLInput = addCardFormElement.querySelector(".modal__inputs_url");
+const cardURLInput = addCardFormElement.querySelector(".modal__url");
 
 
 
