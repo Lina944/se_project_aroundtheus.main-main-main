@@ -36,7 +36,6 @@
             ></button>
             <p class="profile__subtitle" id="profile-subtitle">Explorer</p>
           </div>
-
           <button class="profile__add-button" type="button"></button>
         </section>
         <section class="cards page__section">
@@ -47,15 +46,15 @@
         <p class="footer__copyright">&copy;2023 Tsvetelina V Stefanova</p>
       </footer>
     </div>
-    <div class="modal" id="profile-edit-modal"> 
+    <div class="modal" id="profile-edit-modal">
       <div class="modal__container">
         <button
           class="modal__close"
           type="button"
           id="modal-close-button"
         ></button>
-        <h3 class="modal__heading"> Profile</h3>
-        <form class="modal__form" id="modal-form">
+        <h3 class="modal__heading">Edit Profile</h3>
+        <form class="modal__form" id="js-modal-form">
           <input
             type="text"
             id="profile-title-input"
@@ -65,7 +64,7 @@
           />
           <input
             type="text"
-            id="profile-description"
+            id="profile-subtitle-input"
             name="subtitle"
             placeholder="About"
             class="modal__inputs"
@@ -82,30 +81,28 @@
           id="modal-close-card-button"
         ></button>
         <h3 class="modal__heading">New Place</h3>
-        <form class="modal__form" id="card-form">
+        <form class="modal__form" id="js-card-form">
           <input
             type="text"
             id="card-text"
-            name="title" 
+            name="title"
             placeholder="Title"
             class="modal__inputs modal__inputs_title"
-            required
           />
           <input
             type="url"
-            id="card-link"
+            id="card-url"
             name="url"
             placeholder="Image URL"
-            class="modal__inputs modal__link"
-            required
+            class="modal__inputs modal__inputs_url"
           />
           <button class="modal__button" type="submit">Save</button>
         </form>
       </div>
     </div>
-    <div class="modal" id="modal-image">
+    <div class="modal" id="modal-image-preview">
       <div class="modal__container modal__preview-container">
-        <button class="modal__close modal__close-button" type="button"></button>
+        <button class="modal__close modal__close-preview-button" type="button"></button>
         <img src="#" alt="#" class="modal__preview-image" />
         <p class="modal__title-preview"></p>
       </div>
@@ -120,6 +117,7 @@
         </div>
       </li>
     </template>
+
     <script src="./scripts/index.js" defer></script>
   </body>
 </html>
