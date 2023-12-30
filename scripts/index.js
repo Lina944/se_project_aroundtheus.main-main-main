@@ -58,7 +58,7 @@ const addNewCardButton = document.querySelector(".profile__add-button");
 const addCardCloseModalButton = addCardModal.querySelector(
   "#modal-close-card-button"
 );
-const buttonPreview = document.querySelector(".modal__close-button");
+const previewCloseButton = modalPreviewImage.querySelector(".modal__close-button");
 
 
 const profileName = document.querySelector("#profile-title");
@@ -140,7 +140,7 @@ profileCloseModalButton.addEventListener("click", () =>
 );
 profileEditForm.addEventListener("submit", handleProfileEditSubmit);
 
-buttonPreview.addEventListener("click", () => closeModal(modalPreviewImage));
+previewCloseButton.addEventListener("click", () => closeModal(modalPreviewImage));
 
 addNewCardButton.addEventListener("click", () => openModal(addCardModal));
 addCardFormElement.addEventListener("submit", handleAddCardFormSubmit);
@@ -149,3 +149,4 @@ addCardCloseModalButton.addEventListener("click", () =>
 );
 
 initialCards.forEach((cardData) => renderCard(cardData, cardsWrap));
+
