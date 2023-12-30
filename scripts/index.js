@@ -53,7 +53,7 @@ const profileCloseModalButton = profileEditModal.querySelector(
   "#modal-close-button"
 );
 const profileTitleInput = document.querySelector("#profile-title-input");
-const profileDescriptionInput = document.querySelector("#profile-description");
+const profileDescriptionInput = document.querySelector("#profile-subtitle");
 const addNewCardButton = document.querySelector(".profile__add-button");
 const addCardCloseModalButton = addCardModal.querySelector(
   "#modal-close-card-button"
@@ -62,7 +62,7 @@ const buttonPreview = document.querySelector(".modal__close-button");
 
 
 const profileName = document.querySelector("#profile-title");
-const profileSubtitle = document.querySelector("#profile-description");
+const profileSubtitle = document.querySelector("#profile-subtitle");
 
 
 const cardTitleInput = addCardFormElement.querySelector(
